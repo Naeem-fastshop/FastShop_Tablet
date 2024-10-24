@@ -1,0 +1,5 @@
+export const primaryColor = "#00ACED"
+export const secondaryColor = "#1192c1"
+export const fastshop = "#EFF7FB"
+export const light = "#fff"
+export const dark = "#000"
