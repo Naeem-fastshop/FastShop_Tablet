@@ -1,15 +1,17 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { fastshop } from '../utils/Color'
 
-const ProductDisplayTop = ({productData}) => {
+const ProductDisplayTop = ({productData,openModal}) => {
   return (
-    <View style={styles.product}>
+   <TouchableOpacity onPress={openModal}>
+     <View style={styles.product}>
       <Text style={[styles.producttext,{fontWeight:'600',width:'20%'}]}>Product</Text>
       <Text style={[styles.producttext,{width:'30%',textAlign:'left'}]}>{productData.product}</Text>
       <Text style={[styles.producttext,{fontWeight:'600',width:'20%',textAlign:'center'}]}>Price</Text>
       <Text style={[styles.producttext,{width:'30%',textAlign:'center'}]}>{productData.price}</Text>
     </View>
+   </TouchableOpacity>
   )
 }
 

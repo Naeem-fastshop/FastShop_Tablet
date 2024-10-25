@@ -39,7 +39,7 @@ import {
         <View style={styles.modalOverlay}>
           <View style={styles.modalContent}>
             <Text style={{fontSize: 20, fontWeight: '600', color: '#000'}}>
-              Amendments
+              Extra
             </Text>
             <View
               style={{

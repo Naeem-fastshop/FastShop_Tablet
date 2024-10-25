@@ -57,6 +57,7 @@ const Dashboard = ({navigation}) => {
 
   // Model show work
   const [isModalVisible, setModalVisible] = useState(false);
+  
 
   // Function to open modal
   const openModal = () => {
@@ -67,14 +68,16 @@ const Dashboard = ({navigation}) => {
   const closeModal = () => {
     setModalVisible(false);
   };
-  // end of model show work
+
+
+
 
   return (
     <>
       <TopBar />
-      <ProductDisplayTop productData={productData} />
+      <ProductDisplayTop productData={productData} openModal={openModal}/>
       <ModelShow isVisible={isModalVisible} onClose={closeModal} />
-      <ModelShow isVisible2={isModalVisible2} onClose={closeModal2} />
+    
 
       <View style={styles.dashboard}>
         <View style={styles.leftSide}>

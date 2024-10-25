@@ -129,10 +129,12 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   btn:{
-    backgroundColor:'#145028',
-    width:100,
-    padding:10,
-    borderRadius:5,
+    backgroundColor: '#145028',
+  minWidth: 100, // Minimum width, will expand if text is longer
+  padding: 10,
+  borderRadius: 5,
+  justifyContent: 'center', // Ensures text is centered vertically
+  alignItems: 'center' // Ensures text is centered horizontally
     
   }
 });
